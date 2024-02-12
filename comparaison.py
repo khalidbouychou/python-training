@@ -10,3 +10,4 @@ print (50 != 50)
 
 print("salam" > "dd")
 print(ord("a"))
+
