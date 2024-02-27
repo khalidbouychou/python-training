@@ -70,3 +70,35 @@ res = "basma" not in tabb #true
 res = "khalid" not in tabb#false
 print(res)
 
+print("----"*20)
+names = ["khalid","FARAH","meriem","hello"]
+names = [name.lower() for name in names]
+res = "farah".lower() in names
+print(res)
+print("Nested list "+"----"*20)
+
+technos = [
+    "java",
+    ["nodejs" , ["reactjs" , ["gatspy","nextjs"],"react native"],"angular"],
+    ["python",["flask","django"]]
+]
+print(technos[1][1][0]) #reactjs
+
+print("sort list "+"----"*20)
+
+notes = [10,6,11,18,3]
+res = sorted(notes,reverse=True)
+notes.sort(reverse=True)
+
+print(res)
+print(notes)
+
+notes = [
+    ("khalid",19),
+    ("farah",15),
+    ("meriem",18),
+]
+def sort_by_note(item):
+    return item[1]
+notes.sort(key=sort_by_note)
+print (notes)
